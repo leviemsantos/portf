@@ -2,12 +2,15 @@
 
 import { ReactElement } from "react";
 import { Button } from "./pages/button"
+import { Box } from "./pages/box"
 
 export default function Inicio(): ReactElement {
   return (
-    <div>
-      <h1>Começando</h1>
-      <Button>My Button</Button>
-    </div>
+    <Box css={{
+      backgroundColor: '$gray',
+    }}>
+      <Button>Meu botão</Button>
+
+    </Box>
   )
 }
