@@ -2,7 +2,7 @@
 
 import { ReactElement } from "react";
 import { Box } from "./componentes/box"
-import { Img } from './componentes/imagem'
+import Image from 'next/image'
 // import Teste from "../../public/laura-vitoria-mSuPuoAhAvw-unsplash.jpg"
 
 const boxStyle = {
@@ -17,10 +17,12 @@ export default function Inicio(): ReactElement {
   return (
     <Box css={boxStyle}>
       <div style={{ height: "500px", width: "500px" }}>
-        <Img
+        <Image
           src="/laura-vitoria-mSuPuoAhAvw-unsplash.jpg"
           alt="Imagem inicial"
-          fill={true} />
+          fill={true}
+          priority={true}
+        />
       </div>
     </ Box>
   )
