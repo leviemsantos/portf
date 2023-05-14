@@ -1,6 +1,7 @@
 import { styled } from '@stitches/react';
+import Image from 'next/image';
 
-export const Imagem = styled('img', {
-  height: '100vh',
-  width: '100vw'
+export const Img = styled(Image, {
+  width: '75vw',
+  height: '75vh',
 })

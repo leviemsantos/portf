@@ -2,7 +2,8 @@
 
 import { ReactElement } from "react";
 import { Box } from "./componentes/box"
-import { Imagem } from './componentes/imagem'
+import { Img } from './componentes/imagem'
+// import Teste from "../../public/boxed-water-is-better-YQ4vknTXgfI-unsplash.jpg"
 
 const boxStyle = {
   backgroundColor: '$gray',
@@ -15,7 +16,11 @@ const boxStyle = {
 export default function Inicio(): ReactElement {
   return (
     <Box css={boxStyle}>
-      <Imagem src="https://images.unsplash.com/photo-1683983381840-ff7df07a13b1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80" />
+      <Img
+        src="/boxed-water-is-better-YQ4vknTXgfI-unsplash.jpg"
+        alt="Imagem inicial"
+        width={1920}
+        height={2560} />
     </ Box>
   )
 }
