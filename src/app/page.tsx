@@ -3,7 +3,7 @@
 import { ReactElement } from "react";
 import { Box } from "./componentes/box"
 import { Img } from './componentes/imagem'
-// import Teste from "../../public/boxed-water-is-better-YQ4vknTXgfI-unsplash.jpg"
+// import Teste from "../../public/laura-vitoria-mSuPuoAhAvw-unsplash.jpg"
 
 const boxStyle = {
   backgroundColor: '$gray',
@@ -16,11 +16,12 @@ const boxStyle = {
 export default function Inicio(): ReactElement {
   return (
     <Box css={boxStyle}>
-      <Img
-        src="/boxed-water-is-better-YQ4vknTXgfI-unsplash.jpg"
-        alt="Imagem inicial"
-        width={1920}
-        height={2560} />
+      <div style={{ height: "500px", width: "500px" }}>
+        <Img
+          src="/laura-vitoria-mSuPuoAhAvw-unsplash.jpg"
+          alt="Imagem inicial"
+          fill={true} />
+      </div>
     </ Box>
   )
 }
